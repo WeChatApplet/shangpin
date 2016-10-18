@@ -1,0 +1,146 @@
+<view class="cartBox">
+   <view class="goodsList">
+      <scroll-view scroll-y="true" class="scrollBox">
+         <view class="scrollContent">
+            <checkbox />
+            <image src="/images/20160930174742275587-600-758.jpg"></image>
+            <view class="textInf">
+               <p>TOPSHOP 卡其色经典款女士大衣</p>
+               <view class="goodInf">
+                  <text>颜色:</text>
+                  <text class="color">卡其色</text>
+                  <text>尺码:</text>
+                  <text>6</text>
+               </view>
+               <view class="price">
+                  <text class="part1">￥699</text>
+                  <text class="part2">￥1199</text>
+                  <div class="number">
+                     <text class="reduce">-</text>
+                     <text>1</text>
+                     <text class="add">+</text>
+                  </div>
+               </view>
+            </view>
+         </view>
+
+         <view class="scrollContent">
+            <checkbox />
+            <image src="/images/20160930174742275587-600-758.jpg"></image>
+            <view class="textInf">
+               <p>TOPSHOP 卡其色经典款女士大衣</p>
+               <view class="goodInf">
+                  <text>颜色:</text>
+                  <text class="color">卡其色</text>
+                  <text>尺码:</text>
+                  <text>6</text>
+               </view>
+               <view class="price">
+                  <text class="part1">￥699</text>
+                  <text class="part2">￥1199</text>
+                  <div class="number">
+                     <text class="reduce">-</text>
+                     <text>1</text>
+                     <text class="add">+</text>
+                  </div>
+               </view>
+            </view>
+         </view>
+         <view class="scrollContent">
+            <checkbox />
+            <image src="/images/20160930174742275587-600-758.jpg"></image>
+            <view class="textInf">
+               <p>TOPSHOP 卡其色经典款女士大衣</p>
+               <view class="goodInf">
+                  <text>颜色:</text>
+                  <text class="color">卡其色</text>
+                  <text>尺码:</text>
+                  <text>6</text>
+               </view>
+               <view class="price">
+                  <text class="part1">￥699</text>
+                  <text class="part2">￥1199</text>
+                  <div class="number">
+                     <text class="reduce">-</text>
+                     <text>1</text>
+                     <text class="add">+</text>
+                  </div>
+               </view>
+            </view>
+         </view>
+         <view class="scrollContent">
+            <checkbox />
+            <image src="/images/20160930174742275587-600-758.jpg"></image>
+            <view class="textInf">
+               <p>TOPSHOP 卡其色经典款女士大衣</p>
+               <view class="goodInf">
+                  <text>颜色:</text>
+                  <text class="color">卡其色</text>
+                  <text>尺码:</text>
+                  <text>6</text>
+               </view>
+               <view class="price">
+                  <text class="part1">￥699</text>
+                  <text class="part2">￥1199</text>
+                  <div class="number">
+                     <text class="reduce">-</text>
+                     <text>1</text>
+                     <text class="add">+</text>
+                  </div>
+               </view>
+            </view>
+         </view>
+         <view class="scrollContent">
+            <checkbox />
+            <image src="/images/20160930174742275587-600-758.jpg"></image>
+            <view class="textInf">
+               <p>TOPSHOP 卡其色经典款女士大衣</p>
+               <view class="goodInf">
+                  <text>颜色:</text>
+                  <text class="color">卡其色</text>
+                  <text>尺码:</text>
+                  <text>6</text>
+               </view>
+               <view class="price">
+                  <text class="part1">￥699</text>
+                  <text class="part2">￥1199</text>
+                  <div class="number">
+                     <text class="reduce">-</text>
+                     <text>1</text>
+                     <text class="add">+</text>
+                  </div>
+               </view>
+            </view>
+         </view>
+         <view class="scrollContent">
+            <checkbox />
+            <image src="/images/20160930174742275587-600-758.jpg"></image>
+            <view class="textInf">
+               <p>TOPSHOP 卡其色经典款女士大衣</p>
+               <view class="goodInf">
+                  <text>颜色:</text>
+                  <text class="color">卡其色</text>
+                  <text>尺码:</text>
+                  <text>6</text>
+               </view>
+               <view class="price">
+                  <text class="part1">￥699</text>
+                  <text class="part2">￥1199</text>
+                  <div class="number">
+                     <text class="reduce">-</text>
+                     <text>1</text>
+                     <text class="add">+</text>
+                  </div>
+               </view>
+            </view>
+         </view>
+     </scroll-view>
+  </view>
+  <view class="footer">
+     <view class="sum">
+        <text class="part1">总金额 :</text>
+        <text class="part2">￥0</text>
+     </view>
+     <a href="#">结算(0)</a>
+  </view>
+</view>

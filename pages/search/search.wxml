@@ -1,1 +1,17 @@
-
+<view class="contentBox">
+   <view class="search">
+      <view>
+         <image src="/images/search_icon_new.png"></image>
+         <input type="text" placeholder="搜索商品,品牌,货号" placeholder-style="font-size:12px;color:#999;text-align:center" value="{{inputValue}}" id="input" bindinput="textchanged" />
+      </view>
+      <text bindtap="canaelText">取消</text>
+   </view>
+   <view class="recommend">
+      <text>热门搜索</text>
+      <ul>
+         <block wx:for="{{recommend}}" wx:for-item="item">
+            <li>{{item}}</li>
+         </block>
+      </ul>
+   </view>
+</view>

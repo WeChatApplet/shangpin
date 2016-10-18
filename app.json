@@ -1,11 +1,12 @@
 {
   "pages":[
+     "pages/cart/cart",
      "pages/index/index",
+     "pages/search/search",
      "pages/detail/detail",
      "pages/classify/classify",
      "pages/swiper/swiper",
      "pages/logo/logo",
-     "pages/search/search",
      "pages/logbytel/logbytel"
   ],
   "window":{
@@ -30,8 +31,8 @@
          "iconPath":"/images/fenlei.png",
          "selectedIconPath":"/images/fenlei_light.png"
        }, {
-         "pagePath": "pages/index/index",
-         "text": "购物车",
+         "pagePath": "pages/cart/cart",
+         "text": "购物袋",
          "iconPath":"/images/gouwuche.png",
          "selectedIconPath":"/images/gouwuche_light.png"
        }, {

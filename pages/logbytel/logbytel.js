@@ -9,6 +9,14 @@ Page({
   onLoad: function () {
 
   },
+  onShow:function () {
+     wx.getStorage({
+         key: 'name',
+         success: function(res) {
+             console.log(res.data)
+         }
+      })
+  },
   inputName:function (event) {
     if (event.detail.value) {
         this.setData({
@@ -17,6 +25,7 @@ Page({
     }
   },
   inputPwd:function (event) {
+     var that=this;
     if (event.detail.value) {
         this.setData({
           pwd:event.detail.value
@@ -26,7 +35,15 @@ Page({
         this.setData({
           type:"primary",
           disabled:false
-        })
+       });
+       wx.setStorage({
+           key:"name",
+           data:that.data.name
+      });
+      wx.setStorage({
+          key:"pwd",
+          data:that.data.pwd
+     })
     }
   }
 })
