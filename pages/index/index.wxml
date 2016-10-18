@@ -1,0 +1,60 @@
+<view class="container">
+   <scroll-view scroll-y="true">
+      <view class="picBox">
+         <swiper duration="800" indicator-dots="true" class="swiper" autoplay="true" interval="5000">
+            <swiper-item wx:for="{{bannerList}}" wx:for-item="value">
+                  <image src="{{value.imgUrl}}" mode="scaleToFill" class="swiperImage" />
+            </swiper-item>
+            <!-- <swiper-item>
+                  <image src="/images/20161011112620012798-620-387.jpg" mode="scaleToFill" class="swiperImage" />
+            </swiper-item>
+            <swiper-item>
+                  <image src="/images/20161010191909222226-620-387.jpg" mode="scaleToFill" class="swiperImage" />
+            </swiper-item> -->
+         </swiper>
+      </view>
+      <ul class="picList">
+         <!-- <li>
+            <image src="/images/20160907180808121063-640-134.jpg" class="logo" />
+         </li>
+         <li>
+            <image src="/images/20161009121903258409-1242-776.jpg" />
+         </li>
+         <li>
+            <image src="/images/20161010160303263328-1242-776.jpg" />
+         </li>
+         <li>
+            <image src="/images/20161009180757812032-1242-776.jpg" />
+         </li>
+         <li>
+            <image src="/images/20161009173005127271-1242-776.jpg" />
+         </li>
+         <li>
+            <image src="/images/20161010154529850359-1242-776.jpg" />
+         </li>
+         <li>
+            <image src="/images/20161010155050978768-1242-776.jpg" />
+         </li>
+         <li>
+            <image src="/images/20161009155343433905-1242-776.jpg" />
+         </li>
+         <li>
+            <image src="/images/20161009172749266772-1242-776.jpg" />
+         </li>
+         <li>
+            <image src="/images/20161011170749636302-1242-776.jpg" />
+         </li>
+         <li>
+            <image src="/images/20161010130551982969-1242-776.jpg" />
+         </li>
+         <li>
+            <image src="/images/20160930114239749653-1242-699.jpg" />
+         </li> -->
+         <li wx:for="{{list}}" wx:for-item="value">
+            <navigator url="/pages/classify/classify?group={{value.group}}" >
+               <image src="{{value.imgUrl}}" class="{{value.class}}" mode="aspectFill"/>
+           </navigator>
+         </li>
+      </ul>
+   </scroll-view>
+</view>

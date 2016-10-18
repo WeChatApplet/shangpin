@@ -1,0 +1,14 @@
+<view class="picBox">
+   <swiper duration="800" indicator-dots="true" class="swiper">
+      <swiper-item>
+            <image src="/images/20160928181244103067-621-828.jpg" mode="scaleToFill" class="images"/>
+      </swiper-item>
+      <swiper-item>
+            <image src="/images/081116_f_lpa_464x650.jpg" mode="scaleToFill" class="images"/>
+      </swiper-item>
+      <swiper-item id="jumpToIndex">
+            <image src="/images/072516_f_lwlsale_464x650.jpg" mode="scaleToFill" class="images"/>
+            <button bindtap="jumpPage" type="primary">开启购物之旅</button>
+      </swiper-item>
+   </swiper>
+</view>

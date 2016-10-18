@@ -1,0 +1,44 @@
+<view class="logo-container">
+  <view class="login" wx:if="{{logout}}">
+    <navigator url="/pages/logbytel/logbytel" redirect="true">
+      <button size="mini" type="primary">登录</button>
+    </navigator>
+  </view>
+  <view class="logo" wx:else>
+    <image src="/images/rBQKaFaKCrKAE-1MAAATatXinY0856.png" mode="aspectFit"></image>
+    <text>{{name}}</text>
+    <p>立享 PRIME 金牌会员</p>
+  </view>
+  <view class="information">
+    <view class="hope">
+      <image src="/images/menu_icon001.png" mode="aspectFit"></image>
+      <text>愿望清单</text>
+    </view>
+    <view class="order">
+      <div class="part1">
+        <image src="/images/menu_icon002.png" mode="aspectFit"></image>
+        <text>订单</text>
+      </div>
+      <div class="part2">
+        <image src="/images/menu_icon003.png" mode="aspectFit"></image>
+        <text>客服</text>
+      </div>
+    </view>
+    <view class="card">
+      <image src="/images/menu_icon004.png" mode="aspectFit"></image>
+      <text>卡券</text>
+    </view>
+    <view class="address">
+      <image src="/images/menu_icon005.png" mode="aspectFit"></image>
+      <text>收货地址管理</text>
+    </view>
+    <view class="pwd">
+      <image src="/images/menu_icon006.png" mode="aspectFit"></image>
+      <text>修改密码</text>
+    </view>
+  </view>
+  <view class="logout" wx:if="{{!logout}}">
+    <text class="username">{{name}}</text>
+    <text>退出</text>
+  </view>
+</view>

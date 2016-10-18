@@ -1,0 +1,97 @@
+<view class="main-container">
+    <nav class="main-nav">
+        <ul>
+            <li class="{{current == 0 ? 'active' : ''}}" catchtap="switchSlider" data-index="0">默认</li>
+            <li class="{{current == 1 ? 'active' : ''}}" catchtap="switchSlider" data-index="1">新品</li>
+            <li class="{{current == 2 ? 'active' : ''}}" catchtap="switchSlider" data-index="2">销量</li>
+            <li class="{{current == 3 ? 'active' : ''}}" catchtap="switchSlider" data-index="3">价格</li>
+        </ul>
+    </nav>
+<!--
+    <view class="list-loading">
+      <loading hidden="{{loadingHidden}}">努力加载中...</loading>
+    </view> -->
+
+    <swiper class="main-list" indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" current="{{current}}" bindchange="changeSlider">
+        <block>
+            <swiper-item>
+              <scroll-view wx:if="{{loadingHidden}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" upper-threshold="0" lower-threshold="0" scroll-top="{{scrollTop}}">
+                <!-- <view hidden="{{refreshHidden}}">
+                  <button plain="true" loading="true">努力刷新中...</button>
+                </view> -->
+                <ul>
+                   <navigator wx:for="{{goodsList}}" wx:for-item="item" url="/pages/detail/detail?id={{id}}">
+                     <li>
+                        <image src="{{item.imgUrl}}" mode="aspectFill"></image>
+                        <view> <b>新品</b></view>
+                        <b>{{item.brand}}</b>
+                        <b>{{item.name}}</b>
+                        <b>￥{{item.price}}</b>
+                     </li>
+                  </navigator>
+                </ul>
+                <view hidden="{{loadmoreHidden}}">
+                  <button plain="true" loading="true">努力加载中...</button>
+                </view>
+              </scroll-view>
+            </swiper-item>
+            <swiper-item>
+               <scroll-view wx:if="{{loadingHidden}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" upper-threshold="0" lower-threshold="0" scroll-top="{{scrollTop}}">
+                <!-- <view hidden="{{refreshHidden}}">
+                  <button plain="true" loading="true">努力刷新中...</button>
+                </view> -->
+                <ul>
+                   <navigator wx:for="{{goodsList}}" wx:for-item="item" url="/pages/detail/detail?id={{id}}">
+                     <li>
+                        <image src="{{item.imgUrl}}" mode="aspectFill"></image>
+                        <view> <b>新品</b></view>
+                        <b>{{item.brand}}</b>
+                        <b>{{item.name}}</b>
+                        <b>￥{{item.price}}</b>
+                     </li>
+                  </navigator>
+                </ul>
+                <view hidden="{{loadmoreHidden}}">
+                  <button plain="true" loading="true">努力加载中...</button>
+                </view>
+              </scroll-view>
+            </swiper-item>
+            <swiper-item>
+               <scroll-view wx:if="{{loadingHidden}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" upper-threshold="0" lower-threshold="0" scroll-top="{{scrollTop}}">
+                <ul>
+                   <navigator wx:for="{{goodsList}}" wx:for-item="item" url="/pages/detail/detail?id={{id}}">
+                     <li>
+                        <image src="{{item.imgUrl}}" mode="aspectFill"></image>
+                        <view> <b>新品</b></view>
+                        <b>{{item.brand}}</b>
+                        <b>{{item.name}}</b>
+                        <b>￥{{item.price}}</b>
+                     </li>
+                  </navigator>
+                </ul>
+                <view hidden="{{loadmoreHidden}}">
+                  <button plain="true" loading="true">努力加载中...</button>
+                </view>
+              </scroll-view>
+            </swiper-item>
+            <swiper-item>
+               <scroll-view wx:if="{{loadingHidden}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" upper-threshold="0" lower-threshold="0" scroll-top="{{scrollTop}}">
+                <ul>
+                   <navigator wx:for="{{goodsList}}" wx:for-item="item" url="/pages/detail/detail?id={{id}}">
+                     <li>
+                        <image src="{{item.imgUrl}}" mode="aspectFill"></image>
+                        <view> <b>新品</b></view>
+                        <b>{{item.brand}}</b>
+                        <b>{{item.name}}</b>
+                        <b>￥{{item.price}}</b>
+                     </li>
+                  </navigator>
+                </ul>
+                <view hidden="{{loadmoreHidden}}">
+                  <button plain="true" loading="true">努力加载中...</button>
+                </view>
+              </scroll-view>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>

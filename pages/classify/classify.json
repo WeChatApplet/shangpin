@@ -1,0 +1,9 @@
+{
+   "window": {
+      "backgroundTextStyle":"light",
+      "navigationBarBackgroundColor": "#000",
+      "navigationBarTitleText": "商品分类",
+      "navigationBarTextStyle":"white",
+      "enablePullDownRefresh": true
+   }
+}

@@ -1,0 +1,95 @@
+<scroll-view scroll-y="true">
+   <view class="detailBox">
+      <view class="detail">
+         <!-- <image src="/images/20160930174742275587-600-758.jpg" mode="aspectFill" />
+         <b>CHRIS BY CHRISTOPHER BU</b>
+         <p>卜柯文跨界可口可乐：全球限量纪念系列--白色短袖衬衫</p>
+         <view><i>首次购物9折优惠</i></view>
+         <b>￥2380</b> -->
+         <image src="{{gooddata.imgUrl}}" mode="aspectFill" />
+         <b>CHRIS BY CHRISTOPHER BU</b>
+         <p>卜柯文跨界可口可乐：全球限量纪念系列--白色短袖衬衫</p>
+         <view><i>首次购物9折优惠</i></view>
+         <b>￥{{gooddata.price}}</b>
+      </view>
+   </view>
+   <!-- 支付方式 -->
+   <view class="payWay">
+      <text>支付:</text>
+      <i class="wayOne"></i>
+      <i class="wayTwo"></i>
+      <i class="wayThree"></i>
+   </view>
+   <!-- 尺寸，颜色 -->
+   <view class="sizeColor">
+      <view>
+         <b>颜色:</b>
+         <i>白色</i>
+      </view>
+      <view>
+         <b>尺码:</b>
+         <i>S,M,L</i>
+      </view>
+   </view>
+   <view class="evaluate">
+      <b>暂无评价</b>
+   </view>
+   <view class="information">
+      <ul>
+         <li class="{{current == 0 ? 'active' : ''}}" catchtap="switchSlider" data-index="0">商品详情</li>
+         <li class="{{current == 1 ? 'active' : ''}}" catchtap="switchSlider" data-index="1">图片详情</li>
+         <li class="{{current == 2 ? 'active' : ''}}" catchtap="switchSlider" data-index="2">尺寸及试穿</li>
+         <li class="{{current == 3 ? 'active' : ''}}" catchtap="switchSlider" data-index="3">保养售后</li>
+      </ul>
+   </view>
+   <swiper  duration="{{300}}" class="showInfor" current="{{current}}" bindchange="changeSlider">
+       <swiper-item>
+         <view>
+            <div>
+               <b>商品编号:</b>
+               <i>3061111</i>
+            </div>
+            <div>
+               <b>商品名称:</b>
+               <i>卜柯文跨界可口可乐：全球限量纪念系列--白色短袖衬衫</i>
+            </div>
+            <div>
+               <b>商品货号:</b>
+               <i>A15CO31</i>
+            </div>
+            <div>
+               <b>产  地:</b>
+               <i>北京</i>
+            </div>
+            <div>
+               <b>材  质:</b>
+               <i>100%棉</i>
+            </div>
+            <!-- 温馨提示 -->
+            <div>
+               <b>温馨提示:</b>
+               <i>1、 海外发货的部分商品不支持礼品卡支付，不支持货到付款，且不开具购物发票；商品退货税费全部返还；商品无质量问题，运费不退；2、 根据中国海关总署要求，购买海外仓商品清关入境需要提供身份证信息进行入境申报，请您配合。我们不会向第三方泄露您的资料，请您放心；3、 退货商品需确保相关配件、单据、吊牌（不能从商品上拆除）、包装、卡证等要完好、齐全，不影响二次销售；如商品为鞋靴，请勿将物流面单地址直接贴在鞋盒上，寄回进行二次包装; </i>
+            </div>
+         </view>
+       </swiper-item>
+       <!-- 图片展示 -->
+       <swiper-item>
+          <view>
+            <image src="/images/20160930174758655052-0-0.jpg" mode="aspectFit" />
+         </view>
+       </swiper-item>
+       <swiper-item class="showSize">
+            <view>
+               <text>暂无尺码说明</text>
+            </view>
+       </swiper-item>
+       <swiper-item>
+            <view>
+               <b>价格说明：</b>
+               <i>金牌会员价：在尚品网展示颜色为蓝色，此价格为会员享受的专属售价，部分品牌不支持会员价。促销价：在尚品网展示颜色为红色，尚品网会针对部分商品进行打折促销活动，促销价为商品促销活动时的售价。 预热价：展示在商品售价后方的对比价格，打折促销活动开启之前，会提前告诉用户促销活动时的售价，此价格在活动正式开启时生效。</i>
+               <b>重要说明：</b>
+               <i>1.根据海关相关规定，每年个人跨境购物总金额超出万元，可能会导致商品清关速度缓慢，如需要，我们会与您联系配合海关提供相关证明信息，以便尽快清关。如因不配合海关清关导致的商品退货，罚没等，将从您已支付的货品金额中扣除由此产生的相关费用。2.您在本（公司）网站上购买海外发货商品时，自动视为您同意由本（公司）网站代您向海关申报和代缴税款。3.尚品网所售海外商品由于受到海外供应商库存销售情况变动影响，无法完全确保于您下单时仍有充沛库存，您所选购的海外商品订单，以尚品网确认并发货时方视为成立。4.您购买的境外商品适用的品质、健康、标识等项目使用标准符合原产国使用标准，可能与我国标准有所不同，所以在使用过程中由此可能产生的危害或损失以及其他风险，将由您个人承担。 </i>
+            </view>
+       </swiper-item>
+   </swiper>
+</scroll-view>

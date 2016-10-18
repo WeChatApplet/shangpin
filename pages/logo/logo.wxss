@@ -1,0 +1,98 @@
+page{
+   width: 100%;
+   height: 100%;
+}
+.logo-container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.login{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  background-color: #2d2d2d;
+}
+.logo{
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d2d2d;
+}
+.logo image{
+  width: 52px;
+  height: 52px;
+  border-radius: 2px;
+}
+.logo text{
+  line-height: 24px;
+  color: white;
+  font-weight: bold;
+}
+.logo p{
+  color: white;
+  background-color: #0700c5;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.information{
+  flex: 1;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.information view{
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  height: 44px;
+}
+.information view image{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.information view text{
+  font-size: 14px;
+  color: #666;
+}
+.information .hope,.information .card,.information .address,.information .pwd{
+  align-items: center;
+  padding-left: 10px;
+}
+.information .order{
+  padding-left: 10px;
+  flex-direction: column;
+  height: 88px;
+}
+.information .order div{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.logout{
+  height: 44px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #999;
+}
+.logout .username{
+  flex: 2;
+  border-right: 1px solid #000;
+}
+.logout text{
+  flex: 1;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}

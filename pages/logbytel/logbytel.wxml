@@ -1,0 +1,14 @@
+<view class="logbox">
+   <view class="name">
+     <image src="/images/tel.png"></image>
+     <input  placeholder="请输入手机号码" placeholder-style="font-size:10px;color:#999" bindinput="inputName"/>
+   </view>
+   <view class="pwd">
+     <image src="/images/password.png"></image>
+     <input  placeholder="请输入登录密码" password placeholder-style="font-size:10px;color:#999" bindinput="inputPwd"/>
+   </view>
+   <navigator url="/pages/logo/logo?name={{name}}">
+     <button disabled="{{default}}" type="{{type}}">登 录</button>
+   </navigator>
+   <a href="#">忘记密码？</a>
+</view>

@@ -1,0 +1,44 @@
+{
+  "pages":[
+     "pages/index/index",
+     "pages/detail/detail",
+     "pages/classify/classify",
+     "pages/swiper/swiper",
+     "pages/logo/logo",
+     "pages/search/search",
+     "pages/logbytel/logbytel"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "尚品购物商城",
+    "navigationBarTextStyle":"white"
+    },
+    "tabBar": {
+       "color":"white",
+       "selectedColor":"#0dc441",
+       "borderStyle":"white",
+       "backgroundColor":"black",
+       "list": [{
+         "pagePath": "pages/index/index",
+         "text": "首页",
+         "iconPath":"/images/zhuye.png",
+         "selectedIconPath":"/images/zhuye_light.png"
+       }, {
+         "pagePath": "pages/search/search",
+         "text": "发现",
+         "iconPath":"/images/fenlei.png",
+         "selectedIconPath":"/images/fenlei_light.png"
+       }, {
+         "pagePath": "pages/index/index",
+         "text": "购物车",
+         "iconPath":"/images/gouwuche.png",
+         "selectedIconPath":"/images/gouwuche_light.png"
+       }, {
+         "pagePath": "pages/logo/logo",
+         "text": "我的",
+         "iconPath":"/images/yonghu.png",
+         "selectedIconPath":"/images/yonghu_light.png"
+       }]
+  }
+}

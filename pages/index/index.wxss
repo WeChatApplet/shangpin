@@ -1,0 +1,36 @@
+page{
+   height: 100%;
+   width: 100%;
+}
+scroll-view{
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+}
+.picBox{
+   width: 100%;
+   height: 37%;
+}
+.picBox .swiper{
+   height: 100%;
+   width: 100%
+}
+.swiperImage{
+   height: 100%;
+   width: 100%;
+}
+scroll-view .picList{
+   /*display: flex;
+   flex-direction: column;*/
+   width: 100%;
+}
+scroll-view .picList li{
+   width: 100%;
+}
+scroll-view .picList image{
+   width: 100%;
+}
+scroll-view .picList .logo{
+   width: 100%;
+   height: 120px;
+}
