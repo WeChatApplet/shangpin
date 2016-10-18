@@ -20,7 +20,7 @@
                   <button plain="true" loading="true">努力刷新中...</button>
                 </view> -->
                 <ul>
-                   <navigator wx:for="{{goodsList}}" wx:for-item="item" url="/pages/detail/detail?id={{id}}">
+                   <navigator wx:for="{{goodsList}}" wx:for-item="item" url="/pages/detail/detail?id={{item.group}}">
                      <li>
                         <image src="{{item.imgUrl}}" mode="aspectFill"></image>
                         <view> <b>新品</b></view>
@@ -41,7 +41,7 @@
                   <button plain="true" loading="true">努力刷新中...</button>
                 </view> -->
                 <ul>
-                   <navigator wx:for="{{goodsList}}" wx:for-item="item" url="/pages/detail/detail?id={{id}}">
+                   <navigator wx:for="{{goodsList}}" wx:for-item="item" url="/pages/detail/detail?id={{item.group}}">
                      <li>
                         <image src="{{item.imgUrl}}" mode="aspectFill"></image>
                         <view> <b>新品</b></view>
@@ -59,7 +59,7 @@
             <swiper-item>
                <scroll-view wx:if="{{loadingHidden}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" upper-threshold="0" lower-threshold="0" scroll-top="{{scrollTop}}">
                 <ul>
-                   <navigator wx:for="{{goodsList}}" wx:for-item="item" url="/pages/detail/detail?id={{id}}">
+                   <navigator wx:for="{{goodsList}}" wx:for-item="item" url="/pages/detail/detail?id={{item.group}}">
                      <li>
                         <image src="{{item.imgUrl}}" mode="aspectFill"></image>
                         <view> <b>新品</b></view>
@@ -77,7 +77,7 @@
             <swiper-item>
                <scroll-view wx:if="{{loadingHidden}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" upper-threshold="0" lower-threshold="0" scroll-top="{{scrollTop}}">
                 <ul>
-                   <navigator wx:for="{{goodsList}}" wx:for-item="item" url="/pages/detail/detail?id={{id}}">
+                   <navigator wx:for="{{goodsList}}" wx:for-item="item" url="/pages/detail/detail?id={{item.group}}">
                      <li>
                         <image src="{{item.imgUrl}}" mode="aspectFill"></image>
                         <view> <b>新品</b></view>

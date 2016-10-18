@@ -3,7 +3,6 @@ Page({
     current: 0,
     goodsList: [],
     group:"",
-    id:"",
     loadingHidden: false,
     refreshHidden: true,
     loadmoreHidden: true,
@@ -34,7 +33,6 @@ Page({
               setTimeout(function () {
                 that.setData({
                    goodsList: res.data,
-                   id:res.goods,
                    loadingHidden: true
                 });
               }, 1500);

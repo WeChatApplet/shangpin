@@ -15,6 +15,23 @@ Page({
   onLoad: function (url) {
      console.log(url);
      var that=this;
+     wx.request({
+        url: 'http://localhost:8090/mock/ClassifyGoodsList.json',
+        header: {
+           'Content-Type': 'application/json'
+        },
+        success: function(res) {
+           for (var i = 0; i < res.data.length; i++) {
+              if (res.data[i].group==url.id) {
+                 that.setData({
+                    gooddata:{
+                       imgUrl:res.data[i].imgUrl
+                    }
+                 })
+              }
+           }
+        }
+     })
    //   console.log(url.id.match("goods")==null);
    // if (url.id.match("goods")!=null) {
    //    wx.request({
