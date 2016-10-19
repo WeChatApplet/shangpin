@@ -1,11 +1,11 @@
 {
   "pages":[
+     "pages/swiper/swiper",
      "pages/cart/cart",
      "pages/index/index",
      "pages/search/search",
      "pages/detail/detail",
      "pages/classify/classify",
-     "pages/swiper/swiper",
      "pages/logo/logo",
      "pages/logbytel/logbytel"
   ],
