@@ -16,7 +16,8 @@ Page({
      console.log(url);
      var that=this;
      wx.request({
-        url: 'http://localhost:8090/mock/ClassifyGoodsList.json',
+      //   url: 'http://localhost:8090/mock/ClassifyGoodsList.json',
+        url: 'http://zhengzh.applinzi.com/weixindata/ClassifyGoodsList.json',
         header: {
            'Content-Type': 'application/json'
         },

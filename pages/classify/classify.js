@@ -24,8 +24,8 @@ Page({
         case "group3":
         case "group1":
            wx.request({
-             url: 'http://localhost:8090/mock/ClassifyGoodsList.json',
-             //url:'http://zhengzh.applinzi.com/ClassifyGoodsList.json',
+            //  url: 'http://localhost:8090/mock/ClassifyGoodsList.json',
+             url:'http://zhengzh.applinzi.com/weixindata/ClassifyGoodsList.json',
              header: {
                 'Content-Type': 'application/json'
              },
@@ -45,8 +45,8 @@ Page({
         case "group4":
         case "group2":
           wx.request({
-            url: 'http://localhost:8090/mock/ClassifyGoodsListGroup2.json',
-            //url:'http://zhengzh.applinzi.com/ClassifyGoodsListGroup2.json',
+            // url: 'http://localhost:8090/mock/ClassifyGoodsListGroup2.json',
+            url:'http://zhengzh.applinzi.com/weixindata/ClassifyGoodsListGroup2.json',
             header: {
                'Content-Type': 'application/json'
             },

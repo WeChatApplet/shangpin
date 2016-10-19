@@ -9,7 +9,8 @@ Page({
   onLoad: function () {
      var that=this;
      wx.request({
-       url: 'http://localhost:8090/mock/search.json',
+      //  url: 'http://localhost:8090/mock/search.json',
+      url:'http://zhengzh.applinzi.com/weixindata/search.json'
        header: {
            'Content-Type': 'application/json'
        },
